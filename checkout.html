@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>ShopMax</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/79b1e8dad1.js" crossorigin="anonymous"></script>
+
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<div>
+				<h1><a href="#">Shopmax</a></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a>
+							<ul>
+								<li><a href="#">Menu One</a></li>
+								<li><a href="#">Menu Two</a></li>
+								<li><a href="#">Menu Three</a></li>
+								<li><a href="#">Sub Menu</a>
+									<ul>
+										<li><a href="#">Menu One</a></li>
+										<li><a href="#">Menu Two</a></li>
+										<li><a href="#">Menu Three</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="#">Catalogue</a></li>
+						<li><a href="#">New Arrivals</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div>
+					<a href="#"><i class="fas fa-search"></i></a>
+					<a href="#"><i class="far fa-heart"></i></a>
+					<a href="cart.html"><i class="fas fa-shopping-bag"><span>2</span></i></a>
+					<button><i class="fas fa-bars"></i></button>
+				</div>
+			</div>
+		</header>
+
+		<section class="page">
+			<a href="index.html">Home</a>/
+			<a href="cart.html">Cart</a>/
+			<span>Checkout</span>
+		</section>
+
+		<section class="checkout">
+			<div>
+				<p>Returning customer? <a href="#">Click here</a> to login</p>
+			</div>
+
+			<div>
+				<div>
+					<h3>Billing Details</h3>
+
+					<form>
+						<label>Country<span>*</span></label>
+						<select id="c_country">
+							<option value="1">Select a country</option>    
+							<option value="2">bangladesh</option>    
+							<option value="3">Algeria</option>    
+							<option value="4">Afghanistan</option>    
+							<option value="5">Ghana</option>    
+							<option value="6">Albania</option>    
+							<option value="7">Bahrain</option>    
+							<option value="8">Colombia</option>    
+							<option value="9">Dominican Republic</option>    
+						</select>
+
+						<div>
+							<div>
+								<label>First Name<span>*</span></label>
+								<input type="text">
+							</div>
+
+							<div>
+								<label>Last Name<span>*</span></label>
+								<input type="text">
+							</div>
+						</div>
+
+						<label>Company Name</label>
+						<input type="text">
+
+						<label>Address<span>*</span></label>
+						<input type="text" placeholder="Street Address">
+						<input type="text" placeholder="Apartment, suite, unit, etc(optional)">
+
+						<div>
+							<div>
+								<label>State/Country<span>*</span></label>
+								<input type="text">
+							</div>
+
+							<div>
+								<label>Posta/Zip<span>*</span></label>
+								<input type="text">
+							</div>
+						</div>
+
+						<div>
+							<div>
+								<label>Email<span>*</span></label>
+								<input type="email">
+							</div>
+
+							<div>
+								<label>Phone<span>*</span></label>
+								<input type="tel">
+							</div>
+						</div>
+
+						<input type="checkbox">Create an account?
+						<input type="checkbox">Ship To a Different Address?
+
+						<label>Order Notes</label>
+						<textarea placeholder="Write your notes here..." rows="10"></textarea>
+					</form>
+				</div>
+
+				<div>
+					<div>
+						<h3>Coupon Code</h3>
+
+						<div>
+							<p>Enter your coupon code if you have one</p>
+							<input type="text" placeholder="Coupon Code"><button>Apply</button>
+						</div>
+					</div>
+
+					<div>
+						<h3>Your Order</h3>
+
+						<div>
+							<table>
+								<tr>
+									<th>Poduct</th>
+									<th>Total</th>
+								</tr>
+
+								<tr>
+									<td>Top Up T-Shirt x 1</td>
+									<td>$250.00</td>
+								</tr>
+
+								<tr>
+									<td>Polo Shirt x 1</td>
+									<td>$100.00</td>
+								</tr>
+
+								<tr>
+									<td>Cart Subtotal</td>
+									<td>$350.00</td>
+								</tr>
+
+								<tr>
+									<td>Order Total</td>
+									<td>$350.00</td>
+								</tr>
+							</table>
+
+							<a href="#">Direct Bank Transfer</a>
+							<a href="#">Cheque Payment</a>
+							<a href="#">Paypal</a>
+
+							<button type="submit">Place Order</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div>
+				<div>
+					<h3>Promo</h3>
+					<a href="#"><img src="images/about_1.jpg"></a>
+					<a href="#">
+						<h3>Finding Your Perfect Shirts This Summer</h3>
+						<p>Promo from July 15 - 25, 2019</p>
+					</a>
+				</div>
+
+				<div>
+					<h3>Quick Links</h3>
+
+					<div>
+						<ul>
+							<li><a href="#">Sell online</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Shopping cart</a></li>
+							<li><a href="#">Store builder</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<ul>
+							<li><a href="#">Mobile commerce</a></li>
+							<li><a href="#">Dropshipping</a></li>
+							<li><a href="#">Website development</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<ul>
+							<li><a href="#">Point of sale</a></li>
+							<li><a href="#">Hardware</a></li>
+							<li><a href="#">Software</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div>
+					<h3>Contact info</h3>
+
+					<i class="fas fa-map-marker-alt"></i><address>203 Fake St. Mountain View, San Francisco, California, USA</address>
+					<i class="fas fa-phone-alt"></i><address>+2 392 3929 210</address>
+					<i class="fas fa-envelope"></i><address>emailaddress@domain.com</address>
+
+					<h4>Subscribe</h4>
+
+					<div>
+						<input type="email" placeholder="Email">
+						<input type="submit" value="Send">
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<p>Copyright ©2020 All rights reserved | This template is made with  by Colorlib</p>
+			</div>
+		</footer>
+	</body>
+</html>
