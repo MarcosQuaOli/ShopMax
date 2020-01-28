@@ -250,7 +250,7 @@
 	}
 }
 
-.popular {
+.popular, .rated {
 	padding-bottom: 4em;
 
 	&__container {
@@ -288,11 +288,52 @@
 		div {
 			height: 400px;
 			overflow: hidden;
+			background-color: #f9f9f9;
+			text-align: center;
 		}
 
-		img {		
-			background-color: #f9f9f9;
-			padding: 6em 2em;
+		img {	
+			max-width: 80%;
+			padding-top: 6em;
+		}
+	}
+}
+
+.rated {
+	overflow: hidden;
+	position: relative;
+
+	&__container {
+		width: 500%;
+		display: block;
+		position: relative;
+		left: 0;
+		padding-bottom: 4em;
+	}
+
+	&__itens {
+		width: 18%;
+		float: left;
+		margin: 0 1%;
+
+		@media (min-width: 992px) {
+			width: 9%;
+		}
+	}
+
+	&__btn {
+		position: absolute;
+		bottom: 1em;
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		button {
+			font-size: 1.6em;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			margin: 0 0.5em;
+			padding: 1em;
 		}
 	}
 }
