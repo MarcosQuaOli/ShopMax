@@ -46,7 +46,7 @@ body {
       height: 6em;
       line-height: 6em; } }
   .header h1 {
-    font-size: 1.5em; }
+    font-size: 1.4em; }
   .header h1 a {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -103,5 +103,42 @@ body {
       display: none; }
     .header__navbar ul {
       display: flex; }
+
+.banner {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding-top: 3em; }
+  .banner__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+    overflow: hidden; }
+  .banner__img {
+    max-height: 600px; }
+    @media (min-width: 768px) {
+      .banner__img {
+        order: 1;
+        max-height: 700px; } }
+    .banner__img img {
+      max-width: 100%; }
+  .banner__content {
+    text-transform: uppercase;
+    align-self: center; }
+    @media (min-width: 768px) {
+      .banner__content {
+        order: 2; } }
+    .banner__content h1 {
+      color: #000;
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      line-height: 1.4em; }
+    .banner__content h2 {
+      font-size: 1em;
+      color: rgba(0, 0, 0, 0.6); }
+    .banner__content a {
+      color: #fff;
+      font-size: 0.8em;
+      padding: 1em 2em;
+      background-color: #000; }
 
 /*# sourceMappingURL=style.css.map */
