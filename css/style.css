@@ -18,10 +18,10 @@ button:focus {
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #8c92a0;
-  line-height: 1.7; }
+  line-height: 1.4em; }
 
 .container {
-  padding: 0 3vw;
+  padding: 0 2vw;
   margin: 0 auto; }
   @media (min-width: 576px) {
     .container {
@@ -140,5 +140,58 @@ body {
       font-size: 0.8em;
       padding: 1em 2em;
       background-color: #000; }
+
+.title {
+  margin: 3em 0;
+  padding-left: 1em;
+  border-left: 4px solid #ee4266; }
+  .title h2 {
+    color: #000;
+    font-size: 2em;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: 400; }
+  .title span {
+    display: block; }
+
+.discover {
+  padding: 3em 0; }
+  .discover__container {
+    display: grid;
+    grid-gap: 1.5em; }
+    @media (min-width: 768px) {
+      .discover__container {
+        grid-template-columns: 2fr 1fr; } }
+  .discover__itens {
+    background-color: #f9f9f9;
+    max-height: 290px;
+    overflow: hidden;
+    position: relative;
+    text-align: center; }
+    .discover__itens:nth-child(2) {
+      margin-top: 20px; }
+    .discover__itens a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #000;
+      background-color: #fff;
+      padding: 1em 2em;
+      transform: translate(-50%, -50%);
+      transition: .2s ease-in-out; }
+      .discover__itens a small {
+        color: #ced4da;
+        font-size: 0.7em;
+        margin-left: 5px; }
+      .discover__itens a:hover {
+        color: #fff;
+        background-color: #000; }
+  @media (min-width: 768px) {
+    .discover__women {
+      max-height: 600px; }
+      .discover__women img {
+        max-width: 300px;
+        margin-top: 4em; } }
 
 /*# sourceMappingURL=style.css.map */
