@@ -193,7 +193,7 @@
 }
 
 .discover {
-	padding: 3em 0;
+	padding-bottom: 4em;
 
 	&__container {
 		display: grid;
@@ -246,6 +246,53 @@
 				max-width: 300px;
 				margin-top: 4em;
 			}
+		}
+	}
+}
+
+.popular {
+	padding-bottom: 4em;
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 2em;
+
+		h2 {
+			font-size: 1.1em;
+			color: rgba(0,0,0,0.7);
+			font-weight: 400;
+			margin-top: 1em;
+		}
+
+		p {
+			font-size: 0.9em;
+			font-weight: bold;
+			color: #000;
+			margin: 0.2em 0;
+
+			span {
+				margin-right: 0.5em;
+				text-decoration: line-through;
+				color: #ccc;
+			}
+		}
+
+		i {
+			font-size: 0.7em;
+			color: #ffc107;
+		}
+	}
+
+	&__itens {
+		div {
+			height: 400px;
+			overflow: hidden;
+		}
+
+		img {		
+			background-color: #f9f9f9;
+			padding: 6em 2em;
 		}
 	}
 }
