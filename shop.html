@@ -17,62 +17,65 @@
 	</head>
 
 	<body>
-		<header class="header">
-			<div>
-				<h1><a href="#">Shopmax</a></h1>
+		<header class="header container">
+			<h1><a href="#">Shopmax</a></h1>
 
-				<nav>
-					<ul>
-						<li><a href="#">Home</a>
-							<ul>
-								<li><a href="#">Menu One</a></li>
-								<li><a href="#">Menu Two</a></li>
-								<li><a href="#">Menu Three</a></li>
-								<li><a href="#">Sub Menu</a>
-									<ul>
-										<li><a href="#">Menu One</a></li>
-										<li><a href="#">Menu Two</a></li>
-										<li><a href="#">Menu Three</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li><a href="shop.html">Shop</a></li>
-						<li><a href="#">Catalogue</a></li>
-						<li><a href="#">New Arrivals</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+			<nav class="header__navbar">
+				<ul>
+					<li><a class="actived" href="#">Home</a>
+						<ul class="dropdown">
+							<li><a href="about.html">About</a></li>
+							<li><a href="#">Menu Two</a></li>
+							<li><a href="#">Menu Three</a></li>
+							<li><a href="#">Sub Menu</a>
+								<ul>
+									<li><a href="#">Menu One</a></li>
+									<li><a href="#">Menu Two</a></li>
+									<li><a href="#">Menu Three</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="#">Catalogue</a></li>
+					<li><a href="#">New Arrivals</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
 
-				<div>
-					<a href="#"><i class="fas fa-search"></i></a>
-					<a href="#"><i class="far fa-heart"></i></a>
-					<a href="cart.html"><i class="fas fa-shopping-bag"><span>2</span></i></a>
-					<button><i class="fas fa-bars"></i></button>
-				</div>
+			<div class="header__icons">
+				<a href="#"><i class="fas fa-search"></i></a>
+				<a href="#"><i class="far fa-heart"></i></a>
+				<a href="cart.html" class="bag"><i class="fas fa-shopping-bag"><span>2</span></i></a>
+				<button><i class="fas fa-bars"></i></button>
 			</div>
 		</header>
 
 		<section class="banner">
-			<div>
-				<img src="images/model_3.png">
-			</div>
+			<div class="container banner__container">
+				<div class="banner__content">
+					<h2>#New summer collection 2019</h2>
+					<h1>Arrivals sales</h1>
+					<a href="#">Shop now</a>
+				</div>
 
-			<div>
-				<h2>#New summer collection 2019</h2>
-				<h1>Arrivals sales</h1>
-				<a href="#">Shop now</a>
+				<div class="banner__img-shop">
+					<img src="images/model_4.png">
+				</div>				
 			</div>
 		</section>
 
 		<section class="page">
-			<a href="index.html">Home</a>/
-			<span>Shop</span>
+			<div class="container">
+				<a href="index.html">Home</a>
+				<span>/</span>
+				<span>Shop</span>
+			</div>
 		</section>
 
-		<section class="shop">
-			<div>
-				<div>
+		<section class="shop container">
+			<div class="shop__product">
+				<div class="shop__product__filter">
 					<h3>Shop All</h3>
 
 					<div>
@@ -93,97 +96,113 @@
 					</div>
 				</div>
 
-				<div>
-					<div>
+				<div class="shop__container">
+					<div class="shop__itens">
 						<a href="#"><img src="images/prod_2.png"></a>
-						<a href="#"><p>Gray Shoe</p></a>
+						<h2>Gray Shoe</h2>
 						<p>$20.00</p>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/prod_3.png"></a>
-						<a href="#"><p>Blue Shoe High Heels</p></a>
+						<h2>Blue Shoe High Heels</h2>
 						<p><span>$46.00</span>$28.00</p>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/model_5.png"></a>
-						<a href="#"><p>Denim Jacket</p></a>
+						<h2>Denim Jacket</h2>
 						<p><span>$46.00</span>$28.00</p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/prod_1.png"></a>
-						<a href="#"><p>Leather Green Bag</p></a>
+						<h2>Leather Green Bag</h2>
 						<p><span>$46.00</span>$28.00</p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/model_1.png"></a>
-						<a href="#"><p>Smooth Cloth</p></a>
+						<h2>Smooth Cloth</h2>
 						<p><span>$46.00</span>$28.00</p>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/model_7.png"></a>
-						<a href="#"><p>Yellow Jacket</p></a>
+						<h2>Yellow Jacket</h2>
 						<p>$58.00</p>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/prod_2.png"></a>
-						<a href="#"><p>Gray Shoe</p></a>
+						<h2>Gray Shoe</h2>
 						<p>$20.00</p>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/prod_3.png"></a>
-						<a href="#"><p>Blue Shoe High Heels</p></a>
+						<h2>Blue Shoe High Heels</h2>
 						<p><span>$46.00</span>$28.00</p>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/model_5.png"></a>
-						<a href="#"><p>Denim Jacket</p></a>
+						<h2>Denim Jacket</h2>
 						<p><span>$46.00</span>$28.00</p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/prod_1.png"></a>
-						<a href="#"><p>Leather Green Bag</p></a>
+						<h2>Leather Green Bag</h2>
 						<p><span>$46.00</span>$28.00</p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/model_1.png"></a>
-						<a href="#"><p>Smooth Cloth</p></a>
+						<h2>Smooth Cloth</h2>
 						<p><span>$46.00</span>$28.00</p>
 					</div>
 
-					<div>
+					<div class="shop__itens">
 						<a href="#"><img src="images/model_7.png"></a>
-						<a href="#"><p>Yellow Jacket</p></a>
+						<h2>Yellow Jacket</h2>
 						<p>$58.00</p>
 					</div>
 				</div>
 
-				<div>
-					<a href="#"><</a>
-					<a href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-					<a href="#">5</a>
-					<a href="#">></a>
+				<div class="shop__product__btn">
+					<a href="#"><span><</span></a>
+					<a href="#" class="actived"><span>1</span></a>
+					<a href="#"><span>2</span></a>
+					<a href="#"><span>3</span></a>
+					<a href="#"><span>4</span></a>
+					<a href="#"><span>5</span></a>
+					<a href="#"><span>></span></a>
 				</div>
 			</div>
 
-			<div>
-				<div>
+			<div class="shop__filter">
+				<div class="shop__filter__itens">
 					<h3>Categories</h3>
 					
 					<ul>
@@ -193,61 +212,72 @@
 					</ul>
 				</div>
 
-				<div>
+				<div class="shop__filter__itens">
 					<h3>Filter by price</h3>
-					<input type="number" name="quantity" placeholder="Min">
-					<input type="number" name="quantity" placeholder="Max">
+
+					<input type="number" name="quantity" min="0" placeholder="Min">
+					<input type="number" name="quantity" min="0" placeholder="Max">
 
 					<h3>Size</h3>
-					<input type="checkbox" name="size" value="small"><span>Small(2,319)</span>
-					<input type="checkbox" name="size" value="medium"><span>Medium(1,282)</span>
-					<input type="checkbox" name="size" value="large"><span>Large(1,392)</span>
-				</div>
 
-				<div>
-					<h3>Color</h3>
+					<label>
+						<input type="checkbox" name="size" value="small"><span>Small(2,319)</span>
+					</label>
 
-					<a href="#">
-						<span></span>
-						<span>Red(2,429)</span>
-					</a>
+					<label>
+						<input type="checkbox" name="size" value="medium"><span>Medium(1,282)</span>
+					</label>
 
-					<a href="#">
-						<span></span>
-						<span>Green(2,298)</span>
-					</a>
+					<label>
+						<input type="checkbox" name="size" value="large"><span>Large(1,392)</span>
+					</label>
 
-					<a href="#">
-						<span></span>
-						<span>Blue(1,075)</span>
-					</a>
 
-					<a href="#">
-						<span></span>
-						<span>Purple(1,075)</span>
-					</a>
+					<div class="shop__filter__color">
+						<h3>Color</h3>
+
+						<a href="#">
+							<span style="background-color: red"></span>
+							<span>Red(2,429)</span>
+						</a>
+
+						<a href="#">
+							<span style="background-color: green"></span>
+							<span>Green(2,298)</span>
+						</a>
+
+						<a href="#">
+							<span style="background-color: blue"></span>
+							<span>Blue(1,075)</span>
+						</a>
+
+						<a href="#">
+							<span style="background-color: purple"></span>
+							<span>Purple(1,075)</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="discover">
-			<div>
+		<section class="discover container">
+			<div class="title">
 				<h2>Discover<span>the collections</span></h2>
 			</div>
 
-			<div>
-				<div>
+			<div class="discover__container">
+				<div class="discover__itens discover__women">
 					<img src="images/model_4.png">
 					<a href="#">Women<small>25 itens</small></a>
 				</div>
 
 				<div>
-					<div>
+					<div class="discover__itens">
 						<img src="images/model_5.png">
 						<a href="#">Men<small>25 itens</small></a>
 					</div>
 
-					<div>
+					<div class="discover__itens">
 						<img src="images/model_6.png">
 						<a href="#">Shoes<small>25 itens</small></a>
 					</div>
@@ -255,9 +285,9 @@
 			</div>
 		</section>
 
-		<footer class="footer">
-			<div>
-				<div>
+		<footer class="footer container">
+			<div class="footer__container">
+				<div class="footer__content">
 					<h3>Promo</h3>
 					<a href="#"><img src="images/about_1.jpg"></a>
 					<a href="#">
@@ -266,52 +296,62 @@
 					</a>
 				</div>
 
-				<div>
+				<div class="footer__links">
 					<h3>Quick Links</h3>
 
-					<div>
-						<ul>
-							<li><a href="#">Sell online</a></li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Shopping cart</a></li>
-							<li><a href="#">Store builder</a></li>
-						</ul>
-					</div>
+					<div class="footer__links__grid">
+						<div>
+							<ul>
+								<li><a href="#">Sell online</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Shopping cart</a></li>
+								<li><a href="#">Store builder</a></li>
+							</ul>
+						</div>
 
-					<div>
-						<ul>
-							<li><a href="#">Mobile commerce</a></li>
-							<li><a href="#">Dropshipping</a></li>
-							<li><a href="#">Website development</a></li>
-						</ul>
-					</div>
+						<div>
+							<ul>
+								<li><a href="#">Mobile commerce</a></li>
+								<li><a href="#">Dropshipping</a></li>
+								<li><a href="#">Website development</a></li>
+							</ul>
+						</div>
 
-					<div>
-						<ul>
-							<li><a href="#">Point of sale</a></li>
-							<li><a href="#">Hardware</a></li>
-							<li><a href="#">Software</a></li>
-						</ul>
+						<div>
+							<ul>
+								<li><a href="#">Point of sale</a></li>
+								<li><a href="#">Hardware</a></li>
+								<li><a href="#">Software</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 
-				<div>
+				<div class="footer__contact">
 					<h3>Contact info</h3>
 
-					<i class="fas fa-map-marker-alt"></i><address>203 Fake St. Mountain View, San Francisco, California, USA</address>
-					<i class="fas fa-phone-alt"></i><address>+2 392 3929 210</address>
-					<i class="fas fa-envelope"></i><address>emailaddress@domain.com</address>
-
-					<h4>Subscribe</h4>
+					<div>
+						<i class="fas fa-map-marker-alt"></i><address>203 Fake St. Mountain View, San Francisco, California, USA</address>
+					</div>
 
 					<div>
+						<i class="fas fa-phone-alt"></i><address>+2 392 3929 210</address>
+					</div>
+
+					<div>
+						<i class="fas fa-envelope"></i><address>emailaddress@domain.com</address>
+					</div>
+
+					<h3>Subscribe</h3>
+
+					<div class="footer__contact__form">
 						<input type="email" placeholder="Email">
 						<input type="submit" value="Send">
 					</div>
 				</div>
 			</div>
 
-			<div>
+			<div class="footer__copy">
 				<p>Copyright ©2020 All rights reserved | This template is made with  by Colorlib</p>
 			</div>
 		</footer>
