@@ -14,7 +14,7 @@
 		max-width: 960px;
 	}
 	@media (min-width: 1200px) {
-		max-width: 1160px;
+		max-width: 1180px;
 	}
 }
 
@@ -312,7 +312,7 @@
 		width: 500%;
 		display: block;
 		position: relative;
-		left: -156.5%;
+		left: 0;
 		padding-bottom: 4em;
 	}
 
@@ -340,5 +340,123 @@
 			margin: 0 0.5em;
 			padding: 1em;
 		}
+	}
+}
+
+.footer {
+	&__container {
+		display: grid;
+		grid-gap: 2em;
+
+		@media (min-width: 768px) {
+			grid-template-columns: 1fr 2fr 1fr;
+		}
+
+		h3 {
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			font-size: 0.9em;
+			color: rgba(0,0,0,0.7);
+			margin-bottom: 2em;
+			font-weight: 400;
+		}
+	}
+
+	&__content {
+		img {
+			border-radius: 10px;
+		}
+
+		a {
+			h3 {
+				margin-top: 1em;
+				margin-bottom: 0;
+				letter-spacing: 0;
+				color: $color-primary;
+				text-transform: capitalize;
+				font-size: 1.1em;
+			}
+
+			p {
+				font-size: 0.9em;
+				color: rgba(0,0,0,0.7);
+			}
+		}
+	}
+
+	&__links {	
+		li {
+			margin: 1em 0;
+
+			a {
+				color: rgba(0,0,0,0.7);
+				font-size: 0.9em;
+
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+
+		&__grid {
+			display: grid;
+			
+			@media (min-width: 768px) {
+				grid-template-columns: repeat(3, 1fr);
+
+				ul {
+
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	&__contact {
+		div {
+			margin: 1em 0;
+		}
+
+		i {
+			color: $color-primary;
+			margin-right: 1em;
+		}
+
+		address {
+			display: inline-block;
+			font-size: 0.9em;
+		}
+
+		&__form {
+			position: relative;
+
+			input[type=email] {
+				width: 100%;
+				padding: 0.8em 0.5em;
+				border-radius: 5px;
+				border: 1px solid #ddd;
+				font-size: 1.1em;
+			}
+
+			input[type=submit] {
+				position: absolute;
+				padding: 1em 2em;
+				right: 5px;
+				top: 50%;
+				transform: translateY(-50%);
+				background-color: $color-primary;
+				border: 1px solid $color-primary;
+				border-radius: 5px;
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__copy {
+		text-align: center;
+		margin: 5em 0;
 	}
 }

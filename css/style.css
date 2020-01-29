@@ -17,7 +17,6 @@ button:focus {
 
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #8c92a0;
   line-height: 1.4em; }
 
 .container {
@@ -34,7 +33,7 @@ body {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1160px; } }
+      max-width: 1180px; } }
 
 .header {
   display: flex;
@@ -238,7 +237,7 @@ body {
     width: 500%;
     display: block;
     position: relative;
-    left: -156.5%;
+    left: 0;
     padding-bottom: 4em; }
   .rated__itens {
     width: 18%;
@@ -259,5 +258,77 @@ body {
       cursor: pointer;
       margin: 0 0.5em;
       padding: 1em; }
+
+.footer__container {
+  display: grid;
+  grid-gap: 2em; }
+  @media (min-width: 768px) {
+    .footer__container {
+      grid-template-columns: 1fr 2fr 1fr; } }
+  .footer__container h3 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 2em;
+    font-weight: 400; }
+.footer__content img {
+  border-radius: 10px; }
+.footer__content a h3 {
+  margin-top: 1em;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  color: #ee4266;
+  text-transform: capitalize;
+  font-size: 1.1em; }
+.footer__content a p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.7); }
+.footer__links li {
+  margin: 1em 0; }
+  .footer__links li a {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9em; }
+    .footer__links li a:hover {
+      color: #ee4266; }
+.footer__links__grid {
+  display: grid; }
+  @media (min-width: 768px) {
+    .footer__links__grid {
+      grid-template-columns: repeat(3, 1fr); }
+      .footer__links__grid ul {
+        text-align: center; } }
+.footer__contact div {
+  margin: 1em 0; }
+.footer__contact i {
+  color: #ee4266;
+  margin-right: 1em; }
+.footer__contact address {
+  display: inline-block;
+  font-size: 0.9em; }
+.footer__contact__form {
+  position: relative; }
+  .footer__contact__form input[type=email] {
+    width: 100%;
+    padding: 0.8em 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.1em; }
+  .footer__contact__form input[type=submit] {
+    position: absolute;
+    padding: 1em 2em;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ee4266;
+    border: 1px solid #ee4266;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer; }
+.footer__copy {
+  text-align: center;
+  margin: 5em 0; }
 
 /*# sourceMappingURL=style.css.map */
