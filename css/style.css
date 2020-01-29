@@ -25,16 +25,16 @@ body {
   margin: 0 auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 550px; } }
+      max-width: 540px; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 750px; } }
+      max-width: 740px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 980px; } }
+      max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1180px; } }
+      max-width: 1160px; } }
 
 .header {
   display: flex;
@@ -107,7 +107,8 @@ body {
 .banner {
   background-color: #f9f9f9;
   text-align: center;
-  padding-top: 3em; }
+  padding-top: 3em;
+  margin-bottom: 3em; }
   .banner__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
