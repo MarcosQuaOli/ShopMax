@@ -217,14 +217,18 @@ body {
     .popular__container i, .rated__container i {
       font-size: 0.7em;
       color: #ffc107; }
-  .popular__itens div, .rated__itens div {
-    height: 400px;
+  .popular__itens a, .rated__itens a {
     overflow: hidden;
-    background-color: #f9f9f9;
-    text-align: center; }
+    position: relative;
+    height: 400px;
+    display: block;
+    background-color: #f9f9f9; }
   .popular__itens img, .rated__itens img {
-    max-width: 80%;
-    padding-top: 6em; }
+    max-width: 300px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .rated {
   overflow: hidden;
@@ -233,7 +237,7 @@ body {
     width: 500%;
     display: block;
     position: relative;
-    left: 0;
+    left: -156.5%;
     padding-bottom: 4em; }
   .rated__itens {
     width: 18%;
@@ -241,7 +245,7 @@ body {
     margin: 0 1%; }
     @media (min-width: 992px) {
       .rated__itens {
-        width: 9%; } }
+        width: 8.5%; } }
   .rated__btn {
     position: absolute;
     bottom: 1em;

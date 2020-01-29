@@ -285,16 +285,20 @@
 	}
 
 	&__itens {
-		div {
-			height: 400px;
+		a {
 			overflow: hidden;
+			position: relative;
+			height: 400px;
+			display: block;
 			background-color: #f9f9f9;
-			text-align: center;
 		}
 
 		img {	
-			max-width: 80%;
-			padding-top: 6em;
+			max-width: 300px;
+			position: absolute;
+			top: 15%;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 }
@@ -307,7 +311,7 @@
 		width: 500%;
 		display: block;
 		position: relative;
-		left: 0;
+		left: -156.5%;
 		padding-bottom: 4em;
 	}
 
@@ -317,7 +321,7 @@
 		margin: 0 1%;
 
 		@media (min-width: 992px) {
-			width: 9%;
+			width: 8.5%;
 		}
 	}
 
