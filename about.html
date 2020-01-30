@@ -17,81 +17,99 @@
 	</head>
 
 	<body>
-		<header class="header">
-			<div>
-				<h1><a href="#">Shopmax</a></h1>
+		<header class="header container">
+			<h1><a href="index.html">Shopmax</a></h1>
 
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a>
-							<ul>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Menu Two</a></li>
-								<li><a href="#">Menu Three</a></li>
-								<li><a href="#">Sub Menu</a>
-									<ul>
-										<li><a href="#">Menu One</a></li>
-										<li><a href="#">Menu Two</a></li>
-										<li><a href="#">Menu Three</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li><a href="shop.html">Shop</a></li>
-						<li><a href="#">Catalogue</a></li>
-						<li><a href="#">New Arrivals</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+			<nav class="header__navbar">
+				<ul>
+					<li><a class="actived" href="index.html">Home</a>
+						<ul class="dropdown">
+							<li><a class="actived" href="#">About</a></li>
+							<li><a href="#">Menu Two</a></li>
+							<li><a href="#">Menu Three</a></li>
+							<li><a href="#">Sub Menu</a>
+								<ul>
+									<li><a href="#">Menu One</a></li>
+									<li><a href="#">Menu Two</a></li>
+									<li><a href="#">Menu Three</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="#">Catalogue</a></li>
+					<li><a href="#">New Arrivals</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
 
-				<div>
-					<a href="#"><i class="fas fa-search"></i></a>
-					<a href="#"><i class="far fa-heart"></i></a>
-					<a href="cart.html"><i class="fas fa-shopping-bag"><span>2</span></i></a>
-					<button><i class="fas fa-bars"></i></button>
-				</div>
+			<div class="header__icons">
+				<a href="#"><i class="fas fa-search"></i></a>
+				<a href="#"><i class="far fa-heart"></i></a>
+				<a href="cart.html" class="bag"><i class="fas fa-shopping-bag"><span>2</span></i></a>
+				<button><i class="fas fa-bars"></i></button>
 			</div>
 		</header>
 
 		<section class="banner">
-			<div>
-				<img src="images/model_7.png">
-			</div>
+			<div class="container banner__container">
+				<div class="banner__content">
+					<h2>#New summer collection 2019</h2>
+					<h1>Arrivals sales</h1>
+					<a href="#">Shop now</a>
+				</div>
 
-			<div>
-				<h2>#New summer collection 2019</h2>
-				<h1>Arrivals sales</h1>
-				<a href="#">Shop now</a>
+				<div class="banner__img-shop">
+					<img src="images/model_7.png">
+				</div>				
 			</div>
 		</section>
 
 		<section class="page">
-			<a href="index.html">Home</a>/
-			<span>About</span>
+			<div class="container">
+				<a href="index.html">Home</a>
+				<span>/</span>
+				<span>About</span>
+			</div>
 		</section>
 
-		<section class="about">
-			<div>
-				<div>
-					<i class="fas fa-truck"></i>
-					<h3>Free shipping</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+		<section class="about container">
+			<div class="about__content">
+				<div class="about__content__itens">
+					<div>
+						<i class="fas fa-truck fa-3x"></i>
+					</div>
+
+					<div>
+						<h3>Free shipping</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+					</div>
 				</div>
 
-				<div>
-					<i class="fas fa-undo"></i>
-					<h3>Free Returns</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+				<div class="about__content__itens">
+					<div>
+						<i class="fas fa-undo fa-3x"></i>
+					</div>
+
+					<div>
+						<h3>Free Returns</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+					</div>
 				</div>
 
-				<div>
-					<i class="fas fa-question"></i>
-					<h3>Costumer Support</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+				<div class="about__content__itens">
+					<div>
+						<i class="fas fa-question fa-3x"></i>
+					</div>
+
+					<div>
+						<h3>Costumer Support</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+					</div>
 				</div>
 			</div>
 
-			<div>
+			<div class="about__start">
 				<div>
 					<img src="images/blog_1.jpg">
 				</div>
@@ -108,47 +126,51 @@
 			</div>
 		</section>
 
-		<section class="team">
-			<div>
-				<img src="images/person_1.jpg">
-				<h3>Elizabeth Graham</h3>
-				<span>CEO/Co-founder</span>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta.
-				</p>
-			</div>
+		<section class="team container">
+			<h2>The Team</h2>
 
-			<div>
-				<img src="images/person_2.jpg">
-				<h3>Jennifer Greive</h3>
-				<span>Co-founder</span>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta.
-				</p>
-			</div>
+			<div class="team__container">
+				<div>
+					<img src="images/person_1.jpg">
+					<h3>Elizabeth Graham</h3>
+					<span>CEO/Co-founder</span>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta.
+					</p>
+				</div>
 
-			<div>
-				<img src="images/person_3.jpg">
-				<h3>Patrick Marx</h3>
-				<span>Marketing</span>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta.
-				</p>
-			</div>
+				<div>
+					<img src="images/person_2.jpg">
+					<h3>Jennifer Greive</h3>
+					<span>Co-founder</span>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta.
+					</p>
+				</div>
 
-			<div>
-				<img src="images/person_4.jpg">
-				<h3>Mike Coolbert</h3>
-				<span>Sales Manager</span>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta.
-				</p>
+				<div>
+					<img src="images/person_3.jpg">
+					<h3>Patrick Marx</h3>
+					<span>Marketing</span>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta.
+					</p>
+				</div>
+
+				<div>
+					<img src="images/person_4.jpg">
+					<h3>Mike Coolbert</h3>
+					<span>Sales Manager</span>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta.
+					</p>
+				</div>
 			</div>
 		</section>
 
-		<footer class="footer">
-			<div>
-				<div>
+		<footer class="footer container">
+			<div class="footer__container">
+				<div class="footer__content">
 					<h3>Promo</h3>
 					<a href="#"><img src="images/about_1.jpg"></a>
 					<a href="#">
@@ -157,52 +179,62 @@
 					</a>
 				</div>
 
-				<div>
+				<div class="footer__links">
 					<h3>Quick Links</h3>
 
-					<div>
-						<ul>
-							<li><a href="#">Sell online</a></li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Shopping cart</a></li>
-							<li><a href="#">Store builder</a></li>
-						</ul>
-					</div>
+					<div class="footer__links__grid">
+						<div>
+							<ul>
+								<li><a href="#">Sell online</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Shopping cart</a></li>
+								<li><a href="#">Store builder</a></li>
+							</ul>
+						</div>
 
-					<div>
-						<ul>
-							<li><a href="#">Mobile commerce</a></li>
-							<li><a href="#">Dropshipping</a></li>
-							<li><a href="#">Website development</a></li>
-						</ul>
-					</div>
+						<div>
+							<ul>
+								<li><a href="#">Mobile commerce</a></li>
+								<li><a href="#">Dropshipping</a></li>
+								<li><a href="#">Website development</a></li>
+							</ul>
+						</div>
 
-					<div>
-						<ul>
-							<li><a href="#">Point of sale</a></li>
-							<li><a href="#">Hardware</a></li>
-							<li><a href="#">Software</a></li>
-						</ul>
+						<div>
+							<ul>
+								<li><a href="#">Point of sale</a></li>
+								<li><a href="#">Hardware</a></li>
+								<li><a href="#">Software</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 
-				<div>
+				<div class="footer__contact">
 					<h3>Contact info</h3>
 
-					<i class="fas fa-map-marker-alt"></i><address>203 Fake St. Mountain View, San Francisco, California, USA</address>
-					<i class="fas fa-phone-alt"></i><address>+2 392 3929 210</address>
-					<i class="fas fa-envelope"></i><address>emailaddress@domain.com</address>
-
-					<h4>Subscribe</h4>
+					<div>
+						<i class="fas fa-map-marker-alt"></i><address>203 Fake St. Mountain View, San Francisco, California, USA</address>
+					</div>
 
 					<div>
+						<i class="fas fa-phone-alt"></i><address>+2 392 3929 210</address>
+					</div>
+
+					<div>
+						<i class="fas fa-envelope"></i><address>emailaddress@domain.com</address>
+					</div>
+
+					<h3>Subscribe</h3>
+
+					<div class="footer__contact__form">
 						<input type="email" placeholder="Email">
 						<input type="submit" value="Send">
 					</div>
 				</div>
 			</div>
 
-			<div>
+			<div class="footer__copy">
 				<p>Copyright ©2020 All rights reserved | This template is made with  by Colorlib</p>
 			</div>
 		</footer>

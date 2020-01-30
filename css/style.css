@@ -122,7 +122,7 @@ body {
     .banner__img img {
       max-width: 100%; }
   .banner__img-shop {
-    max-height: 400px; }
+    max-height: 300px; }
     @media (min-width: 768px) {
       .banner__img-shop {
         order: 1;
@@ -500,5 +500,73 @@ body {
     color: rgba(0, 0, 0, 0.5);
     font-style: normal;
     font-size: 0.9em; }
+
+/*----------About style----------*/
+.about {
+  margin-top: 4em;
+  margin-bottom: 6em; }
+  .about__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2em;
+    margin-bottom: 4em; }
+    .about__content i {
+      color: #ee4266;
+      margin-bottom: 0.8em; }
+    .about__content h3 {
+      margin-bottom: 0.8em;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 1em; }
+    .about__content p {
+      color: #8c92a0; }
+    .about__content__itens {
+      display: grid; }
+      @media (min-width: 992px) {
+        .about__content__itens {
+          grid-template-columns: 1fr 4fr; } }
+  .about__start {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em 5em; }
+    .about__start img {
+      border-radius: 5px; }
+    .about__start h2 {
+      font-weight: 400;
+      font-size: 1.8em;
+      text-transform: capitalize;
+      margin-bottom: 1.5em; }
+    .about__start p {
+      margin-bottom: 1em;
+      color: #8c92a0; }
+
+.team {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 5em; }
+  .team h2 {
+    font-weight: 400;
+    margin-bottom: 2em;
+    font-size: 1.8em; }
+  .team__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1em; }
+    .team__container img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1em; }
+    .team__container h3 {
+      font-weight: 400;
+      font-size: 1.4em;
+      margin-bottom: 0.4em; }
+    .team__container span {
+      color: #ccc; }
+    .team__container p {
+      margin: 1em 0;
+      color: #8c92a0;
+      font-size: 0.9em; }
 
 /*# sourceMappingURL=style.css.map */
