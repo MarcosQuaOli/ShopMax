@@ -770,4 +770,52 @@ body {
       display: block;
       margin: 1rem 0; }
 
+/*----------Login/Register style----------*/
+.login {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  @media (min-width: 992px) {
+    .login {
+      width: 650px; } }
+  .login h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2rem 0; }
+  .login label {
+    display: block;
+    margin: 1rem 0; }
+  .login input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #dee2e6; }
+  .login input[type=checkbox] {
+    width: auto;
+    margin-right: 0.5rem; }
+  .login div {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: space-between; }
+    .login div a {
+      color: #000;
+      margin: 1rem 0; }
+  .login__sign {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ee4266;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold; }
+  .login__link {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    display: block;
+    margin: 1.5rem 0;
+    color: #000; }
+
 /*# sourceMappingURL=style.css.map */
