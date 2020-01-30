@@ -17,49 +17,49 @@
 	</head>
 
 	<body>
-		<header class="header">
-			<div>
-				<h1><a href="#">Shopmax</a></h1>
+		<header class="header container">
+			<h1><a href="index.html">Shopmax</a></h1>
 
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a>
-							<ul>
-								<li><a href="#">Menu One</a></li>
-								<li><a href="#">Menu Two</a></li>
-								<li><a href="#">Menu Three</a></li>
-								<li><a href="#">Sub Menu</a>
-									<ul>
-										<li><a href="#">Menu One</a></li>
-										<li><a href="#">Menu Two</a></li>
-										<li><a href="#">Menu Three</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li><a href="shop.html">Shop</a></li>
-						<li><a href="#">Catalogue</a></li>
-						<li><a href="#">New Arrivals</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+			<nav class="header__navbar">
+				<ul>
+					<li><a class="actived" href="index.html">Home</a>
+						<ul class="dropdown">
+							<li><a href="about.html">About</a></li>
+							<li><a href="#">Menu Two</a></li>
+							<li><a href="#">Menu Three</a></li>
+							<li><a href="#">Sub Menu</a>
+								<ul>
+									<li><a href="#">Menu One</a></li>
+									<li><a href="#">Menu Two</a></li>
+									<li><a href="#">Menu Three</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="#">Catalogue</a></li>
+					<li><a href="#">New Arrivals</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
 
-				<div>
-					<a href="#"><i class="fas fa-search"></i></a>
-					<a href="#"><i class="far fa-heart"></i></a>
-					<a href="#"><i class="fas fa-shopping-bag"><span>2</span></i></a>
-					<button><i class="fas fa-bars"></i></button>
-				</div>
+			<div class="header__icons">
+				<a href="#"><i class="fas fa-search"></i></a>
+				<a href="#"><i class="far fa-heart"></i></a>
+				<a href="#" class="bag"><i class="fas fa-shopping-bag"><span>2</span></i></a>
+				<button><i class="fas fa-bars"></i></button>
 			</div>
 		</header>
 
-		<section class="page">
-			<a href="index.html">Home</a>/
-			<span>Cart</span>
+		<section class="page page-check">
+			<div class="container">
+				<a href="index.html">Home</a>
+				<span>/</span>Cart
+			</div>
 		</section>
 
-		<section class="cart">
-			<div>
+		<section class="cart container">
+			<div class="cart__table">
 				<table>
 					<tr>
 						<th>Image</th>
@@ -75,13 +75,11 @@
 						<td>Top Up T-Shirt</td>
 						<td>$49.00</td>
 						<td>
-							<div>
+							<div class="table-btn">
 								<button>-</button>
-							</div>
 
-							<input type="text" value="1">
+								<input type="text" value="1">
 
-							<div>
 								<button>+</button>
 							</div>
 						</td>
@@ -94,13 +92,11 @@
 						<td>Polo Shirt</td>
 						<td>$49.00</td>
 						<td>
-							<div>
+							<div class="table-btn">
 								<button>-</button>
-							</div>
 
-							<input type="text" value="1">
-							
-							<div>
+								<input type="text" value="1">
+
 								<button>+</button>
 							</div>
 						</td>
@@ -110,34 +106,34 @@
 				</table>
 			</div>
 
-			<div>
+			<div class="cart__total">
 				<div>
-					<div>
+					<div class="total-btn">
 						<button>Update Cart</button>
 						<button>Continue Shopping</button>
 					</div>
 
-					<div>
+					<div class="total-coupon">
 						<h3>Coupon</h3>
 						<p>Enter your coupon code if you have one.</p>
-						<input type="text">
+						<input type="text" placeholder="Coupon Code">
 						<button>Apply Coupon</button>
 					</div>
 				</div>
 
-				<div>
+				<div class="total-check">
 					<h3>Cart Totals</h3>
 					<p>Subtotal <span>$230.00</span></p>
 					<p>Total <span>$230.00</span></p>
 
-					<button>Proceed to checkout</button>
+					<a href="checkout.html">Proceed to checkout</a>
 				</div>
 			</div>
 		</section>
 
-		<footer class="footer">
-			<div>
-				<div>
+		<footer class="footer container">
+			<div class="footer__container">
+				<div class="footer__content">
 					<h3>Promo</h3>
 					<a href="#"><img src="images/about_1.jpg"></a>
 					<a href="#">
@@ -146,52 +142,62 @@
 					</a>
 				</div>
 
-				<div>
+				<div class="footer__links">
 					<h3>Quick Links</h3>
 
-					<div>
-						<ul>
-							<li><a href="#">Sell online</a></li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Shopping cart</a></li>
-							<li><a href="#">Store builder</a></li>
-						</ul>
-					</div>
+					<div class="footer__links__grid">
+						<div>
+							<ul>
+								<li><a href="#">Sell online</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Shopping cart</a></li>
+								<li><a href="#">Store builder</a></li>
+							</ul>
+						</div>
 
-					<div>
-						<ul>
-							<li><a href="#">Mobile commerce</a></li>
-							<li><a href="#">Dropshipping</a></li>
-							<li><a href="#">Website development</a></li>
-						</ul>
-					</div>
+						<div>
+							<ul>
+								<li><a href="#">Mobile commerce</a></li>
+								<li><a href="#">Dropshipping</a></li>
+								<li><a href="#">Website development</a></li>
+							</ul>
+						</div>
 
-					<div>
-						<ul>
-							<li><a href="#">Point of sale</a></li>
-							<li><a href="#">Hardware</a></li>
-							<li><a href="#">Software</a></li>
-						</ul>
+						<div>
+							<ul>
+								<li><a href="#">Point of sale</a></li>
+								<li><a href="#">Hardware</a></li>
+								<li><a href="#">Software</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 
-				<div>
+				<div class="footer__contact">
 					<h3>Contact info</h3>
 
-					<i class="fas fa-map-marker-alt"></i><address>203 Fake St. Mountain View, San Francisco, California, USA</address>
-					<i class="fas fa-phone-alt"></i><address>+2 392 3929 210</address>
-					<i class="fas fa-envelope"></i><address>emailaddress@domain.com</address>
-
-					<h4>Subscribe</h4>
+					<div>
+						<i class="fas fa-map-marker-alt"></i><address>203 Fake St. Mountain View, San Francisco, California, USA</address>
+					</div>
 
 					<div>
+						<i class="fas fa-phone-alt"></i><address>+2 392 3929 210</address>
+					</div>
+
+					<div>
+						<i class="fas fa-envelope"></i><address>emailaddress@domain.com</address>
+					</div>
+
+					<h3>Subscribe</h3>
+
+					<div class="footer__contact__form">
 						<input type="email" placeholder="Email">
 						<input type="submit" value="Send">
 					</div>
 				</div>
 			</div>
 
-			<div>
+			<div class="footer__copy">
 				<p>Copyright ©2020 All rights reserved | This template is made with  by Colorlib</p>
 			</div>
 		</footer>
