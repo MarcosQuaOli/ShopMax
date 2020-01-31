@@ -35,6 +35,16 @@ body {
     .container {
       max-width: 1180px; } }
 
+#overlay {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 200; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -91,23 +101,39 @@ body {
     .header__icons button:hover {
       color: #3d3f45; }
   .header__navbar {
-    display: none; }
-    @media (min-width: 992px) {
-      .header__navbar {
-        display: block; } }
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 35%;
+    background-color: #fff;
+    display: none;
+    z-index: 400; }
+    .header__navbar ul {
+      margin: 1rem 0; }
     .header__navbar a {
       color: rgba(0, 0, 0, 0.7);
       text-transform: uppercase;
-      margin: 0 0.2em;
       letter-spacing: 1px;
-      padding: 0.5em;
-      font-size: 0.8em; }
+      padding: 1rem 2rem;
+      line-height: 1rem;
+      font-size: 0.8em;
+      display: block; }
       .header__navbar a:hover, .header__navbar a.actived {
         color: #ee4266; }
     .header__navbar .dropdown {
       display: none; }
-    .header__navbar ul {
-      display: flex; }
+    @media (min-width: 992px) {
+      .header__navbar {
+        position: static;
+        display: block;
+        width: auto; }
+        .header__navbar ul {
+          display: flex;
+          margin: 0; }
+        .header__navbar a {
+          padding: 1rem 0.5rem;
+          display: inline-block; } }
 
 .banner {
   background-color: #f9f9f9;
