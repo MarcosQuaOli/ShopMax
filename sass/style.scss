@@ -52,11 +52,23 @@
 			}
 		}
 
+		a:last-child {
+			margin-left: 1.5rem;
+			padding: 0.5rem 1rem;
+			border-left: 1px solid #f0f0f0;
+
+			i {
+				margin-right: 0.5rem;
+				
+			}
+		}
+
 		@media (min-width: 992px) {
 			button {
 				display: none;
 			}
 		}
+
 		.bag {
 			position: relative;
 
@@ -86,7 +98,7 @@
 			&:hover {
 				color: #3d3f45;
 			}
-		}
+		}	
 	}
 	
 	&__navbar {
