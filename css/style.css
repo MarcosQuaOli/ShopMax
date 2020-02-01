@@ -111,6 +111,8 @@ body {
     z-index: 400; }
     .header__navbar ul {
       margin: 1rem 0; }
+    .header__navbar div {
+      position: relative; }
     .header__navbar a {
       color: rgba(0, 0, 0, 0.7);
       text-transform: uppercase;
@@ -119,9 +121,27 @@ body {
       line-height: 1rem;
       font-size: 0.8rem;
       display: block;
-      position: relative; }
+      position: relative;
+      transition: .2s; }
       .header__navbar a:hover, .header__navbar a.actived {
         color: #ee4266; }
+    @media (min-width: 992px) {
+      .header__navbar {
+        position: static;
+        display: block;
+        width: auto; }
+        .header__navbar ul {
+          display: flex;
+          margin: 0; }
+        .header__navbar a {
+          padding: 1rem 0.5rem;
+          display: inline-block; }
+          .header__navbar a.home-hover {
+            padding-right: 1rem; }
+        .header__navbar div:hover .home-btn {
+          color: #ee4266; }
+        .header__navbar .home-actived .home-btn {
+          color: #ee4266; } }
     .header__navbar button {
       border: none;
       border-radius: 50%;
@@ -133,33 +153,22 @@ body {
       cursor: pointer;
       width: 30px;
       height: 30px;
-      transition: 0.2s; }
+      transition: 0.2s;
+      z-index: 50;
+      font-size: 0.7rem; }
       @media (min-width: 992px) {
         .header__navbar button {
           width: auto;
-          height: auto;
-          transform: translateY(0); }
+          height: auto; }
           .header__navbar button.home-btn {
-            position: static; }
+            right: 0; }
           .header__navbar button.submenu-btn {
-            right: 15px;
-            top: initial; } }
+            right: 15px; } }
       .header__navbar button:hover {
         background-color: #ddd; }
         @media (min-width: 992px) {
           .header__navbar button:hover {
             background-color: transparent; } }
-    @media (min-width: 992px) {
-      .header__navbar {
-        position: static;
-        display: block;
-        width: auto; }
-        .header__navbar ul {
-          display: flex;
-          margin: 0; }
-        .header__navbar a {
-          padding: 1rem 0.5rem;
-          display: inline-block; } }
     .header__navbar .dropdown {
       margin: 0;
       margin-left: 0.8rem;

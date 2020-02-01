@@ -126,6 +126,10 @@
 			margin: 1rem 0;
 		}
 
+		div {
+			position: relative;
+		}
+
 		a {
 			color: rgba(0,0,0,0.7);
 			text-transform: uppercase;
@@ -135,9 +139,42 @@
 			font-size: 0.8rem;
 			display: block;
 			position: relative;
+			transition: .2s;
 
 			&:hover, &.actived  {
 				color: $color-primary;
+			}
+		}
+
+		@media (min-width: 992px) {
+			position: static;
+			display: block;
+			width: auto;
+
+			ul {
+				display: flex;
+				margin: 0;
+			}
+
+			a {
+				padding: 1rem 0.5rem;
+				display: inline-block;
+
+				&.home-hover {
+					padding-right: 1rem;
+				}
+			}
+
+			div:hover {
+				.home-btn {
+					color: $color-primary;
+				}
+			}
+
+			.home-actived {
+				.home-btn {
+					color: $color-primary;
+				}
 			}
 		}
 
@@ -153,19 +190,19 @@
 			width: 30px;
 			height: 30px;
 			transition: 0.2s;
+			z-index: 50;
+			font-size: 0.7rem;
 
 			@media (min-width: 992px) {
 				width: auto;
 				height: auto;
-				transform: translateY(0);
 
 				&.home-btn {
-					position: static;
+					right: 0;
 				}
 
 				&.submenu-btn {
 					right: 15px;
-					top: initial;
 				}
 			}
 
@@ -175,24 +212,6 @@
 				@media (min-width: 992px) {
 					background-color: transparent;	
 				}	
-			}
-		}
-
-		
-
-		@media (min-width: 992px) {
-			position: static;
-			display: block;
-			width: auto;
-
-			ul {
-				display: flex;
-				margin: 0;
-			}
-
-			a {
-				padding: 1rem 0.5rem;
-				display: inline-block;
 			}
 		}
 	

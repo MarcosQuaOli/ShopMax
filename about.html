@@ -16,7 +16,7 @@
 		crossorigin="anonymous"></script>
 
 		<script src="js/menu.js"></script>
-		<script src="js/slider.js"></script>
+		<script src="js/dropdown.js"></script>
 	</head>
 
 	<body>
@@ -25,13 +25,21 @@
 
 			<nav class="header__navbar">
 				<ul>
-					<li><a class="actived" href="index.html">Home</a>
+					<li>
+						<div class="home-actived">
+							<button class="home-btn"><i class="fas fa-arrow-down"></i></button>
+							<a class="actived home-hover" href="index.html">Home</a>
+						</div>
 						<ul class="dropdown">
 							<li><a class="actived" href="#">About</a></li>
 							<li><a href="#">Menu Two</a></li>
 							<li><a href="#">Menu Three</a></li>
-							<li><a href="#">Sub Menu</a>
-								<ul>
+							<li>
+								<div>
+									<button class="submenu-btn"><i class="fas fa-arrow-down"></i></button> 
+									<a class="submenu-hover" href="#">Sub Menu</a>
+								</div>
+								<ul class="dropdown__sub">
 									<li><a href="#">Menu One</a></li>
 									<li><a href="#">Menu Two</a></li>
 									<li><a href="#">Menu Three</a></li>

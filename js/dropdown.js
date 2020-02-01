@@ -24,11 +24,11 @@ $(document).ready(() => {
 
 	/*-----Hover in home-----*/
 
-	hoverDropdown('.home-hover', '.dropdown');
+	hoverDropdown('.home-hover', '.dropdown', '.home-btn');
 	
 	/*-----Hover in submenu-----*/
 
-	hoverDropdown('.submenu-hover', '.dropdown__sub');
+	hoverDropdown('.submenu-hover', '.dropdown__sub', '.submenu-btn');
 
 	
 	$(window).resize((e) => {
@@ -74,14 +74,14 @@ $(document).ready(() => {
 		$('.dropdown__sub').css('display', element);
 	}
 
-	function hoverDropdown(link, ul) {
-		$(link+','+ul).mouseenter(() => {
+	function hoverDropdown(link, ul, arrow) {
+		$(link+','+ul+','+arrow).mouseenter(() => {
 			if($(window).innerWidth() > 992) {
 				$(ul).addClass('dropdown-animate');
 			}
 		})
 
-		$(link+','+ul).mouseleave(() => {
+		$(link+','+ul+','+arrow).mouseleave(() => {
 			if($(window).width() > 992) {
 				$(ul).removeClass('dropdown-animate');
 			}
