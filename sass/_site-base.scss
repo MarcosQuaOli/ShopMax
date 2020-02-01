@@ -25,4 +25,23 @@ body {
 	line-height: 1.4em;
 }
 
+@mixin dropdownHide {
+	position: absolute;
+	text-align: left;
+	border-top: 2px solid #ee4266;
+	border-left: 1px solid #edf0f5;
+	border-right: 1px solid #edf0f5;
+	border-bottom: 1px solid #edf0f5;
+	padding: 0px 0;
+	margin-left: 0px;
+	background: #fff;
+	line-height: 5px;
+	width: 200px;
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+	transform: translate3d(0, 50px, 0);
+	transition: .4s;
+}
+
 $color-primary: #ee4266;

@@ -5,22 +5,21 @@ $(document).ready(() => {
 
 	$('.header__icons button').click(() => {
 		$('#overlay').show();
-		$('.header__navbar').show('slow');
+		$('.header__navbar').show().animate({width: '250px'});
 	})
 
 	$('#overlay').click(() => {
 		$('#overlay').hide();
-		$('.header__navbar').hide('slow');
+		$('.header__navbar').hide(400).animate({width: '0'});
 	})
 
 	$(window).resize((e) => {
 		if(window.innerWidth > 992) {
-			$('.header__navbar').show();
+			$('.header__navbar').show().css('width', 'auto');
 			$('#overlay').hide();
 		} else {
-			$('.header__navbar').hide();
+			$('.header__navbar').hide().css('width', '0');
 			$('#overlay').hide();
 		}
 	})
-
 })
