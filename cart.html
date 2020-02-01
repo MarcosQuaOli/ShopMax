@@ -17,10 +17,15 @@
 
 		<script src="js/menu.js"></script>
 		<script src="js/dropdown.js"></script>
+		<script src="js/search.js"></script>
 	</head>
 
 	<body>
 		<header class="header container">
+			<div class="header__search">
+				<input type="text" placeholder="Search keyword and hit enter...">
+				<a class="close-search" href="#"><i class="fas fa-times"></i></a>
+			</div>
 			<h1><a href="index.html">Shopmax</a></h1>
 
 			<nav class="header__navbar">
@@ -55,7 +60,7 @@
 			</nav>
 
 			<div class="header__icons">
-				<a href="#"><i class="fas fa-search"></i></a>
+				<a class="search-btn" href="#"><i class="fas fa-search"></i></a>
 				<a href="#"><i class="far fa-heart"></i></a>
 				<a href="#" class="bag"><i class="fas fa-shopping-bag"><span>2</span></i></a>
 				<button><i class="fas fa-bars"></i></button>
