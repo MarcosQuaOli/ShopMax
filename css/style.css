@@ -427,7 +427,8 @@ body {
     display: block;
     position: relative;
     left: 0;
-    padding-bottom: 4em; }
+    padding-bottom: 4em;
+    transition: 0.5s ease-in-out; }
   .rated__itens {
     width: 18%;
     float: left;
