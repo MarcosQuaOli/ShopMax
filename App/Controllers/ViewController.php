@@ -22,7 +22,7 @@ class ViewController extends Action {
 		$this->render('checkout');
 	}
 
-	public function cartcontact() {
+	public function cart() {
 
 		$this->render('cart');
 	}

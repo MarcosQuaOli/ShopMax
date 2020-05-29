@@ -1,0 +1,12 @@
+.dropdown {
+  display: none;
+
+  &__link {
+    padding: .6rem 2.5rem;
+    font-size: .9rem;
+
+    &--sub {
+      padding-left: 3.5rem;
+    }
+  }
+}

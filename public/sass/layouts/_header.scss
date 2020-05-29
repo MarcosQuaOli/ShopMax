@@ -1,0 +1,61 @@
+.header {
+  position: relative;
+  height: 5rem;
+  line-height: 5rem;
+
+  &__logo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    padding: 0.2em 0.5em;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  &__itens {
+    display: inline-block;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    color: #868995;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    padding: .4rem;
+    font-size: .9rem;
+
+    &:last-child {
+      position: relative;
+    }    
+  }
+
+  &__login {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid #f0f0f0;
+    display: inline;
+  }
+
+  &__bag {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: $color-primary;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  &__icon {
+    margin-right: .5rem;
+  }
+}

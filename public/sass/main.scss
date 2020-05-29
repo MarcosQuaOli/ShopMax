@@ -1,3 +1,13 @@
-@import 'variables.scss';
-@import 'mixins.scss';
-@import 'base.scss';
+@import 
+  'base/variables.scss',
+  'base/mixins.scss',
+  'base/base.scss',
+  'layouts/page.scss',
+  'layouts/header.scss',
+  'modules/search.scss',
+  'modules/flex.scss',
+  'modules/grid.scss',
+  'common-blocks/navbar.scss',
+  'common-blocks/dropdown.scss',
+  'common-blocks/bar-btn.scss'
+;

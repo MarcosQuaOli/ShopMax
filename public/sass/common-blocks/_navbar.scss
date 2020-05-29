@@ -1,0 +1,43 @@
+.navbar {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 0;
+  z-index: 20;
+  background-color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  &__overlay {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  &__link {
+    display: block;
+    padding: .8rem 2rem;
+    line-height: 1rem;
+    color: $color-primary;
+  }
+
+  &__dropdown {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: .5rem;
+  }
+}
