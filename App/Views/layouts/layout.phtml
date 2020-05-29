@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 	<head>
-		<title>ShopMax</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>ShopMax</title>		
 
 		<!-- Font Awesome -->
-		<script src="https://kit.fontawesome.com/79b1e8dad1.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
 		<!-- JQuery -->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 		crossorigin="anonymous"></script>
 
-		<script src="js/menu.js"></script>
-		<script src="js/dropdown.js"></script>
-		<script src="js/search.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+
 	</head>
 
 	<body>
@@ -26,17 +24,18 @@
 				<input type="text" placeholder="Search keyword and hit enter...">
 				<a class="close-search" href="#"><i class="fas fa-times"></i></a>
 			</div>
-			<h1><a href="index.html">Shopmax</a></h1>
+
+			<h1><a href="/">Shopmax</a></h1>
 
 			<nav class="header__navbar">
 				<ul>
 					<li>
 						<div class="home-actived">
 							<button class="home-btn"><i class="fas fa-arrow-down"></i></button>
-							<a class="actived home-hover" href="index.html">Home</a>
+							<a class="actived home-hover" href="/">Home</a>
 						</div>
 						<ul class="dropdown">
-							<li><a href="about.html">About</a></li>
+							<li><a href="/about">About</a></li>
 							<li><a href="#">Menu Two</a></li>
 							<li><a href="#">Menu Three</a></li>
 							<li>
@@ -52,101 +51,23 @@
 							</li>
 						</ul>
 					</li>
-					<li><a href="shop.html">Shop</a></li>
+					<li><a href="/shop">Shop</a></li>
 					<li><a href="#">Catalogue</a></li>
 					<li><a href="#">New Arrivals</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="/contact">Contact</a></li>
 				</ul>
 			</nav>
 
 			<div class="header__icons">
 				<a class="search-btn" href="#"><i class="fas fa-search"></i></a>
 				<a href="#"><i class="far fa-heart"></i></a>
-				<a href="#" class="bag"><i class="fas fa-shopping-bag"><span>2</span></i></a>
+				<a href="/cart" class="bag"><i class="fas fa-shopping-bag"><span>2</span></i></a>
 				<button><i class="fas fa-bars"></i></button>
-				<a href="login.html"><i class="fas fa-user"></i>Login</a>
+				<a href="/login"><i class="fas fa-user"></i>Login</a>
 			</div>
 		</header>
 
-		<section class="page page-check">
-			<div class="container">
-				<a href="index.html">Home</a>
-				<span>/</span>Cart
-			</div>
-		</section>
-
-		<section class="cart container">
-			<div class="cart__table">
-				<table>
-					<tr>
-						<th>Image</th>
-						<th>Product</th>
-						<th>Price</th>
-						<th>Quantity</th>
-						<th>Total</th>
-						<th>Remove</th>						
-					</tr>
-
-					<tr>
-						<td><img src="images/cloth_1.jpg"></td>
-						<td>Top Up T-Shirt</td>
-						<td>$49.00</td>
-						<td>
-							<div class="table-btn">
-								<button>-</button>
-
-								<input type="text" value="1">
-
-								<button>+</button>
-							</div>
-						</td>
-						<td>$49.00</td>
-						<td><a href="#"><i class="fas fa-times"></i></a></td>
-					</tr>
-
-					<tr>
-						<td><img src="images/cloth_2.jpg"></td>
-						<td>Polo Shirt</td>
-						<td>$49.00</td>
-						<td>
-							<div class="table-btn">
-								<button>-</button>
-
-								<input type="text" value="1">
-
-								<button>+</button>
-							</div>
-						</td>
-						<td>$49.00</td>
-						<td><a href="#"><i class="fas fa-times"></i></a></td>
-					</tr>
-				</table>
-			</div>
-
-			<div class="cart__total">
-				<div>
-					<div class="total-btn">
-						<button>Update Cart</button>
-						<button>Continue Shopping</button>
-					</div>
-
-					<div class="total-coupon">
-						<h3>Coupon</h3>
-						<p>Enter your coupon code if you have one.</p>
-						<input type="text" placeholder="Coupon Code">
-						<button>Apply Coupon</button>
-					</div>
-				</div>
-
-				<div class="total-check">
-					<h3>Cart Totals</h3>
-					<p>Subtotal <span>$230.00</span></p>
-					<p>Total <span>$230.00</span></p>
-
-					<a href="checkout.html">Proceed to checkout</a>
-				</div>
-			</div>
-		</section>
+		<?= $this->content() ?>
 
 		<footer class="footer container">
 			<div class="footer__container">
@@ -219,4 +140,5 @@
 			</div>
 		</footer>
 	</body>
+
 </html>

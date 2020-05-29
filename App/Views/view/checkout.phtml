@@ -1,0 +1,136 @@
+<section class="page page-check">
+	<div class="container">
+		<a href="index.html">Home</a>
+		<span>/</span>
+		<a href="cart.html">Cart</a>
+		<span>/</span>Shop
+	</div>
+</section>
+
+<section class="checkout container">
+	<div class="checkout__return">
+		<p>Returning customer? <a href="login.html">Click here</a> to login</p>
+	</div>
+
+	<div class="checkout__container">
+		<div>
+			<h3>Billing Details</h3>
+			
+			<div class="checkout__itens">
+				<form>
+					<label>Country<span>*</span></label>
+					<select id="c_country">
+						<option value="1">Select a country</option>    
+						<option value="2">bangladesh</option>    
+						<option value="3">Algeria</option>    
+						<option value="4">Afghanistan</option>    
+						<option value="5">Ghana</option>    
+						<option value="6">Albania</option>    
+						<option value="7">Bahrain</option>    
+						<option value="8">Colombia</option>    
+						<option value="9">Dominican Republic</option>    
+					</select>
+
+					<div class="checkout__itens__name">
+						<div>
+							<label>First Name<span>*</span></label>
+							<input type="text">
+						</div>
+
+						<div>
+							<label>Last Name<span>*</span></label>
+							<input type="text">
+						</div>
+					</div>
+
+					<label>Company Name</label>
+					<input type="text">
+
+					<label>Address<span>*</span></label>
+					<input type="text" placeholder="Street Address" style="margin-bottom: 1em">
+					<input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
+
+					<div class="checkout__itens__name">
+						<div>
+							<label>State/Country<span>*</span></label>
+							<input type="text">
+						</div>
+
+						<div>
+							<label>Posta/Zip<span>*</span></label>
+							<input type="text">
+						</div>
+					</div>
+
+					<div class="checkout__itens__name">
+						<div>
+							<label>Email<span>*</span></label>
+							<input type="email">
+						</div>
+
+						<div>
+							<label>Phone<span>*</span></label>
+							<input type="tel">
+						</div>
+					</div>
+
+					<label>Order Notes</label>
+					<textarea placeholder="Write your notes here..." rows="8"></textarea>
+				</form>
+			</div>
+		</div>
+
+		<div>
+			<h3>Coupon Code</h3>
+			<div class="checkout__itens">
+				<div>
+					<p>Enter your coupon code if you have one</p>
+					<div class="code">
+						<input type="text" placeholder="Coupon Code">
+						<button>Apply</button>
+					</div>
+				</div>
+			</div>
+			
+			<h3>Your Order</h3>
+
+			<div class="checkout__itens table">
+				<table>
+					<tr>
+						<th>Product</th>
+						<th>Total</th>
+					</tr>
+
+					<tr>
+						<td>Top Up T-Shirt x 1</td>
+						<td>$250.00</td>
+					</tr>
+
+					<tr>
+						<td>Polo Shirt x 1</td>
+						<td>$100.00</td>
+					</tr>
+
+					<tr>
+						<td>Cart Subtotal</td>
+						<td>$350.00</td>
+					</tr>
+
+					<tr>
+						<td>Order Total</td>
+						<td>$350.00</td>
+					</tr>
+				</table>
+				
+				<div>
+					<a href="#">Direct Bank Transfer</a>
+					<a href="#">Cheque Payment</a>
+					<a href="#">Paypal</a>
+				</div>
+
+				<button type="submit">Place Order</button>
+			</div>
+		</div>
+	</div>
+</section>
+
