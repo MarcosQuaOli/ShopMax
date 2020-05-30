@@ -18,26 +18,28 @@ $(document).ready(() => {
       
       $($subtarget).slideUp();
       $($target).slideToggle();
-    }
-
-    
+    }    
   })
   
-  if(window.innerWidth > 992) {
+  if(window.innerWidth > 768) {
     $('#arrow-right').removeClass();
     $('#arrow-right').addClass('fas fa-arrow-right');
   }
 
-  $('.navbar__dropdown, dropdown').mouseenter((e) => {
-    $target = $(e.currentTarget).parent().children('.dropdown');
-    
-    $($target).slideDown();
+  $('.navbar__rel').mouseleave((e) => {
+    if(window.innerWidth > 768) {
+      $target = $(e.currentTarget).children('.dropdown');
+      
+      $($target).slideUp();
+    }
   })
 
-  $('.navbar__dropdown, dropdown').mouseleave((e) => {
-    $target = $(e.currentTarget).parent().children('.dropdown');
-    
-    $($target).slideUp();
-  })
+  $('.navbar__rel').mouseenter((e) => {
+    if(window.innerWidth > 768) {
+      $target = $(e.currentTarget).children('.dropdown');
+
+      $($target).slideDown();
+    }
+  })  
 
 })

@@ -10,12 +10,8 @@
 
   &__overlay {
     display: none;
-    position: absolute;
+    @include overlay;
     background: rgba(0, 0, 0, 0.6);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
     z-index: 10;
   }
 
@@ -25,11 +21,12 @@
     line-height: 1rem;
     color: $color-primary;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: .7rem;
 
     @media (min-width: 768px) {
-      line-height: 5rem;
       padding: 0 .5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       color: #868995;
 
       &:hover, &--active {
@@ -40,6 +37,14 @@
         padding-right: 1.5rem;
       }
     }
+
+    @media (min-width: 992px) {
+      font-size: .9rem;
+    }
+  }
+
+  &__rel {
+    position: relative;
   }
 
   &__dropdown {
@@ -47,10 +52,8 @@
   }
 
   &__icon {
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
+    @include centralizaY;
+    right: 10%;    
     cursor: pointer;
     background-color: transparent;
     border: none;

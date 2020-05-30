@@ -1,0 +1,24 @@
+.search {
+  display: none;
+  @include overlay;
+  background-color: #fff;
+  z-index: 100;
+
+  &__input {
+    @include overlay;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    font-size: 5vw;
+
+    @media (min-width: 992px) {
+      font-size: 3vw;
+    }
+  }
+
+  &__close {
+    @include centralizaY;
+    right: 10%;  
+    color: #868995;
+  }
+}

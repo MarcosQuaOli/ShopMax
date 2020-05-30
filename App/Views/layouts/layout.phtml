@@ -20,6 +20,7 @@
 		<!-- <script src="js/swiper.js"></script> -->
 		<script src="js/btn-menu.js"></script>
 		<script src="js/btn-dropdown.js"></script>
+		<script src="js/search.js"></script>
 		
 	<!-- 	<link rel="stylesheet" type="text/css" href="/css/style.css"> -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -30,31 +31,31 @@
 		<header class="header">
 			<div class="page__inner flex">
 				<div class="search">
-					<input type="text" placeholder="Search keyword and hit enter...">
-					<a href="#"><i class="fas fa-times"></i></a>
+					<input class="search__input" type="text" placeholder="Search keyword and hit enter...">
+					<a class="search__close" href="#"><i class="fas fa-times fa-2x"></i></a>
 				</div>
 
 				<h1><a class="header__logo" href="/">Shopmax</a></h1>
 
 				<nav>
 					<ul class="navbar">
-						<li>
+						<li class="navbar__rel">
 							<div class="navbar__dropdown">
 								<button class="navbar__icon"><i class="fas fa-arrow-down"></i></button>
-								<a class="navbar__link navbar__link--pr-1" href="/">Home</a>
+								<a class="navbar__link navbar__link--pr-1">Pages</a>
 							</div>
 
 							<ul class="dropdown">
 								<li><a class="navbar__link dropdown__link" href="/about">About</a></li>
 								<li><a class="navbar__link dropdown__link" href="#">Menu Two</a></li>
 								<li><a class="navbar__link dropdown__link" href="#">Menu Three</a></li>
-								<li>
+								<li class="navbar__rel">
 									<div class="navbar__dropdown">
 										<button class="navbar__icon"><i id="arrow-right" class="fas fa-arrow-down"></i></button> 
 										<a class="navbar__link navbar__link--pr-1 dropdown__link" href="#">Sub Menu</a>
 									</div>
 
-									<ul class="dropdown">
+									<ul class="dropdown dropdown--sub">
 										<li><a class="navbar__link dropdown__link dropdown__link--sub" href="#">Menu One</a></li>
 										<li><a class="navbar__link dropdown__link dropdown__link--sub" href="#">Menu Two</a></li>
 										<li><a class="navbar__link dropdown__link dropdown__link--sub" href="#">Menu Three</a></li>
@@ -72,7 +73,7 @@
 
 				<div>
 					<div class="header__itens">
-						<a class="header__link" href="#"><i class="fas fa-search"></i></a>
+						<a class="header__link header__search" href="#"><i class="fas fa-search"></i></a>
 						<a class="header__link" href="#"><i class="far fa-heart"></i></a>
 						<a class="header__link" href="/cart"><i class="fas fa-shopping-bag"><span class="header__bag">2</span></i></a>
 					</div>
@@ -90,9 +91,9 @@
 
 		<?= $this->content() ?>
 
-		<footer class="footer container">
-			<div class="footer__container">
-				<div class="footer__content">
+		<footer class="footer page__inner page__section">
+			<div class="grid grid--col-3">
+				<div>
 					<h3>Promo</h3>
 					<a href="#"><img src="images/about_1.jpg"></a>
 					<a href="#">
@@ -101,10 +102,10 @@
 					</a>
 				</div>
 
-				<div class="footer__links">
+				<div>
 					<h3>Quick Links</h3>
 
-					<div class="footer__links__grid">
+					<div>
 						<div>
 							<ul>
 								<li><a href="#">Sell online</a></li>
@@ -132,7 +133,7 @@
 					</div>
 				</div>
 
-				<div class="footer__contact">
+				<div>
 					<h3>Contact info</h3>
 
 					<div>
@@ -149,7 +150,7 @@
 
 					<h3>Subscribe</h3>
 
-					<div class="footer__contact__form">
+					<div>
 						<input type="email" placeholder="Email">
 						<input type="submit" value="Send">
 					</div>

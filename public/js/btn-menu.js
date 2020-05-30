@@ -9,6 +9,7 @@ $(document).ready(() => {
 	})
 
 	$('.navbar__overlay').click(() => {
+		$('.dropdown').slideUp();
 		$('.navbar__overlay').hide();
 		$('.navbar').hide(400).animate({width: '0'});
 	})

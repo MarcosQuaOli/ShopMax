@@ -3,23 +3,30 @@
 
   &__link {
     padding: .6rem 2.5rem;
-    font-size: .9rem;
+    font-size: .7rem;
 
     &--sub {
       padding-left: 3.5rem;
     }
 
     @media (min-width: 768px) {
-      padding: 0;
-      line-height: 1rem;
+      margin-top: 0;
+      margin-bottom: 0;
       padding: .5rem;
     }
   }
 
   @media (min-width: 768px) {
     position: absolute;
-    top: 100%;
+    top: 65%;
+    left: 0;
     background: #fff;
     border-top: 2px solid $color-primary;
+    width: 150px;
+
+    &--sub {
+      left: 100%;
+      top: 0;
+    }
   }
 }
