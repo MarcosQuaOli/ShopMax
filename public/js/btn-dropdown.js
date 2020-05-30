@@ -20,5 +20,24 @@ $(document).ready(() => {
       $($target).slideToggle();
     }
 
-	})
+    
+  })
+  
+  if(window.innerWidth > 992) {
+    $('#arrow-right').removeClass();
+    $('#arrow-right').addClass('fas fa-arrow-right');
+  }
+
+  $('.navbar__dropdown, dropdown').mouseenter((e) => {
+    $target = $(e.currentTarget).parent().children('.dropdown');
+    
+    $($target).slideDown();
+  })
+
+  $('.navbar__dropdown, dropdown').mouseleave((e) => {
+    $target = $(e.currentTarget).parent().children('.dropdown');
+    
+    $($target).slideUp();
+  })
+
 })

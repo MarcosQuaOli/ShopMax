@@ -15,11 +15,12 @@ $(document).ready(() => {
 
 	$(window).resize((e) => {
 		if(window.innerWidth > 768) {
-			$('.navbar').show().css('width', 'auto');
-			$('.navbar__overlay').hide();
+			$('.navbar').css({'width': 'auto', 'display': 'flex'});
+
 		} else {
 			$('.navbar').hide().css('width', '0');
-			$('.navbar__overlay').hide();
 		}
+		
+		$('.navbar__overlay').hide();
 	})
 })

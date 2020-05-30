@@ -8,5 +8,18 @@
     &--sub {
       padding-left: 3.5rem;
     }
+
+    @media (min-width: 768px) {
+      padding: 0;
+      line-height: 1rem;
+      padding: .5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    border-top: 2px solid $color-primary;
   }
 }

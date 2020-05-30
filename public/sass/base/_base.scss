@@ -17,6 +17,10 @@ img {
   display: block;
 }
 
+button, a {
+	transition: .3s ease-in-out;
+}
+
 button:focus {
 	outline: 0;
 }
