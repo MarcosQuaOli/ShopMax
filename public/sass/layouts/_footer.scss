@@ -1,7 +1,67 @@
 .footer {
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.7);
+    font-weight: normal;
+
+    &--mt-1 {
+      margin-top: 2rem;
+    }
+  }
+
+  &__grid {
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  }
+
+  &__subtitle {
+    color: $color-primary;
+    font-weight: 400;
+    margin-bottom: .5rem;
+  }
+
+  &__img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
 
   &__copy {
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 4rem;
+  }
+
+  &__link {
+    display: inline-block;
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 1rem;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__contact {
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    color: $color-primary;
+    margin-right: .5rem;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__subscribe {
+    position: relative;
   }
 }

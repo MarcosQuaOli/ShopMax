@@ -1,0 +1,14 @@
+.link-back {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+
+  &__btn {
+    color: $color-primary;
+  }
+
+  &--mx {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+}

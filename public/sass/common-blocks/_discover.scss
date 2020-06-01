@@ -1,0 +1,28 @@
+.discover {
+
+  &__itens {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9;
+
+    @media (min-width: 768px) {
+      &--height {
+        height: 625px;
+      }
+    }
+  }
+
+  &__content {
+    gap: 25px;
+  }
+
+  &__btn {
+    @include centralizaXY;
+  }
+
+  &__inside {
+    font-size: .8rem;
+    color: rgb(212, 209, 209);
+  }
+}

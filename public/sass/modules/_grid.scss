@@ -14,6 +14,10 @@
     justify-content: center;
   }  
 
+  &--autofit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
   @media (min-width: 576px) {
     &--col-4 {
       grid-template-columns: 1fr 1fr;
@@ -23,6 +27,14 @@
   @media (min-width: 768px) {  
     &--col-5 {
       grid-template-columns: repeat(5, 1fr);
+    }
+
+    &--col-3-1 {
+      grid-template-columns: 3fr 1fr;
+    }
+
+    &--col-5-3 {
+      grid-template-columns: 5fr 3fr;
     }
   }
   

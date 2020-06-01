@@ -1,0 +1,93 @@
+.filter {
+  &__itens {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 3rem;
+  }
+
+  &__check {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &-size {
+      margin-left: .5rem;
+    }
+  }
+  &__color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+
+    &--green {
+      background-color: green;
+    }
+
+    &--red {
+      background-color: red;
+    }
+
+    &--purple {
+      background-color: purple;
+    }
+
+    &--blue {
+      background-color: blue;
+    }
+  }
+
+  &__selection {
+    padding: 1em 0.5em;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    padding: .5rem;
+    width: 40%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__space {
+    @include centralizaXY;
+  }
+
+  &__options {
+    margin-bottom: 3rem;
+  }
+
+  &__link {
+    color: $color-primary;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &-color {
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: #000;
+    }
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: rgba($color: #000, $alpha: .7);
+    margin-bottom: 2rem;
+
+    &--mt-2 {
+      margin-top: 2rem;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.btn {
+  background-color: $color-primary;
+  color: #fff;
+  border: 1px solid $color-primary;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  font-size: .9rem;
+
+  &--size-md {
+    padding: 1rem 2rem;
+  }
+
+  &--black {
+    background-color: #000;
+    border-color: #000;
+  }
+  
+  &--white {
+    background-color: #fff;
+    border: #fff;
+    color: #000;
+
+    &:hover {
+      background-color: #000;
+      border-color: #000;
+      color: #fff;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}

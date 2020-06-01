@@ -17,12 +17,12 @@
 		<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 		
 		<!-- Swiper JS -->
-		<!-- <script src="js/swiper.js"></script> -->
+		<script src="js/swiper.js"></script>
+		
 		<script src="js/btn-menu.js"></script>
 		<script src="js/btn-dropdown.js"></script>
 		<script src="js/search.js"></script>
 		
-	<!-- 	<link rel="stylesheet" type="text/css" href="/css/style.css"> -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 	</head>
@@ -92,67 +92,67 @@
 		<?= $this->content() ?>
 
 		<footer class="footer page__inner page__section">
-			<div class="grid grid--col-3">
+			<div class="grid footer__grid">
 				<div>
-					<h3>Promo</h3>
-					<a href="#"><img src="images/about_1.jpg"></a>
-					<a href="#">
-						<h3>Finding Your Perfect Shirts This Summer</h3>
+					<h3 class="footer__title">Promo</h3>
+					<a href="#"><img class="footer__img" src="images/about_1.jpg"></a>
+					<a class="footer__link" href="#">
+						<h3 class="footer__subtitle">Finding Your Perfect Shirts This Summer</h3>
 						<p>Promo from July 15 - 25, 2019</p>
 					</a>
 				</div>
 
 				<div>
-					<h3>Quick Links</h3>
+					<h3 class="footer__title">Quick Links</h3>
 
-					<div>
+					<div class="footer__content grid grid--col-3">
 						<div>
 							<ul>
-								<li><a href="#">Sell online</a></li>
-								<li><a href="#">Features</a></li>
-								<li><a href="#">Shopping cart</a></li>
-								<li><a href="#">Store builder</a></li>
+								<li><a class="footer__link" href="#">Sell online</a></li>
+								<li><a class="footer__link" href="#">Features</a></li>
+								<li><a class="footer__link" href="#">Shopping cart</a></li>
+								<li><a class="footer__link" href="#">Store builder</a></li>
 							</ul>
 						</div>
 
 						<div>
 							<ul>
-								<li><a href="#">Mobile commerce</a></li>
-								<li><a href="#">Dropshipping</a></li>
-								<li><a href="#">Website development</a></li>
+								<li><a class="footer__link" href="#">Mobile commerce</a></li>
+								<li><a class="footer__link" href="#">Dropshipping</a></li>
+								<li><a class="footer__link" href="#">Website development</a></li>
 							</ul>
 						</div>
 
 						<div>
 							<ul>
-								<li><a href="#">Point of sale</a></li>
-								<li><a href="#">Hardware</a></li>
-								<li><a href="#">Software</a></li>
+								<li><a class="footer__link" href="#">Point of sale</a></li>
+								<li><a class="footer__link" href="#">Hardware</a></li>
+								<li><a class="footer__link" href="#">Software</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 
 				<div>
-					<h3>Contact info</h3>
+					<h3 class="footer__title">Contact info</h3>
 
-					<div>
-						<i class="fas fa-map-marker-alt"></i><address>203 Fake St. Mountain View, San Francisco, California, USA</address>
+					<div class="flex flex--justify-left footer__contact">
+						<i class="fas fa-map-marker-alt footer__icon"></i><address class="footer__address">203 Fake St. Mountain View, San Francisco, California, USA</address>
 					</div>
 
-					<div>
-						<i class="fas fa-phone-alt"></i><address>+2 392 3929 210</address>
+					<div class="flex flex--justify-left footer__contact">
+						<i class="fas fa-phone footer__icon"></i><address class="footer__address">+2 392 3929 210</address>
 					</div>
 
-					<div>
-						<i class="fas fa-envelope"></i><address>emailaddress@domain.com</address>
+					<div class="flex flex--justify-left footer__contact">
+						<i class="fas fa-envelope footer__icon"></i><address class="footer__address">emailaddress@domain.com</address>
 					</div>
 
-					<h3>Subscribe</h3>
+					<h3 class="footer__title footer__title--mt-1">Subscribe</h3>
 
-					<div>
-						<input type="email" placeholder="Email">
-						<input type="submit" value="Send">
+					<div class="footer__subscribe">
+						<input class="input" type="email" placeholder="Email">
+						<input class="btn btn__input" type="submit" value="Send">
 					</div>
 				</div>
 			</div>
