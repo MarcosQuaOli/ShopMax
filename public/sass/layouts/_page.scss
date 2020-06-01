@@ -29,6 +29,12 @@
     }
   }
 
+  &__user {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &--center {
     text-align: center;
   }
@@ -36,6 +42,10 @@
   &__section {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  &__overflow-x {
+    overflow-x: auto;
   }
 
 }

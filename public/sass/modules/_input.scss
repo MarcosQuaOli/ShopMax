@@ -4,4 +4,33 @@
   border-radius: 5px;
   border: 1px solid #ddd;
   font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+  &__btn {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  &__checkbox {
+    margin-right: .5rem;
+  }
+  
+  &__important {
+    color: red;
+    margin-left: .5rem;
+  }
+
+  &--no-margin {
+    margin: 0;
+  }
+
+  &--center {
+    width: 120px;
+    text-align: center;
+  }
 }
+

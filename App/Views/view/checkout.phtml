@@ -1,25 +1,26 @@
-<section class="page page-check">
-	<div class="container">
-		<a href="index.html">Home</a>
-		<span>/</span>
-		<a href="cart.html">Cart</a>
-		<span>/</span>Shop
+<section class="link-back link-back--bg-light">
+	<div class="page__inner">
+		<a class="link-back__btn" href="/">Home</a>
+		<span class="link-back--mx">/</span>
+		<a class="link-back__btn" href="/cart">Cart</a>
+		<span class="link-back--mx">/</span>
+		<span class="link-back--mx">Checkout</span>
 	</div>
 </section>
 
-<section class="checkout container">
-	<div class="checkout__return">
-		<p>Returning customer? <a href="login.html">Click here</a> to login</p>
+<section class="page__inner page__section">
+	<div class="box">
+		<p>Returning customer? <a class="link-back__btn" href="/login">Click here</a> to login</p>
 	</div>
 
-	<div class="checkout__container">
+	<div class="grid grid--col-2 grid--gap-2">
 		<div>
-			<h3>Billing Details</h3>
+			<h3 class="title__sub">Billing Details</h3>
 			
-			<div class="checkout__itens">
+			<div class="box">
 				<form>
-					<label>Country<span>*</span></label>
-					<select id="c_country">
+					<label>Country<span class="input__important">*</span></label>
+					<select class="input">
 						<option value="1">Select a country</option>    
 						<option value="2">bangladesh</option>    
 						<option value="3">Algeria</option>    
@@ -31,104 +32,109 @@
 						<option value="9">Dominican Republic</option>    
 					</select>
 
-					<div class="checkout__itens__name">
+					<div class="grid grid--col-2">
 						<div>
-							<label>First Name<span>*</span></label>
-							<input type="text">
+							<label>First Name<span class="input__important">*</span></label>
+							<input class="input" type="text">
 						</div>
 
 						<div>
-							<label>Last Name<span>*</span></label>
-							<input type="text">
+							<label>Last Name<span class="input__important">*</span></label>
+							<input class="input" type="text">
 						</div>
 					</div>
 
 					<label>Company Name</label>
-					<input type="text">
+					<input class="input" type="text">
 
-					<label>Address<span>*</span></label>
-					<input type="text" placeholder="Street Address" style="margin-bottom: 1em">
-					<input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
+					<label>Address<span class="input__important">*</span></label>
+					<input class="input" type="text" placeholder="Street Address" style="margin-bottom: 1em">
+					<input class="input" type="text" placeholder="Apartment, suite, unit, etc. (optional)">
 
-					<div class="checkout__itens__name">
+					<div class="grid grid--col-2">
 						<div>
-							<label>State/Country<span>*</span></label>
-							<input type="text">
+							<label>State/Country<span class="input__important">*</span></label>
+							<input class="input" type="text">
 						</div>
 
 						<div>
-							<label>Posta/Zip<span>*</span></label>
-							<input type="text">
+							<label>Posta/Zip<span class="input__important">*</span></label>
+							<input class="input" type="text">
 						</div>
 					</div>
 
-					<div class="checkout__itens__name">
+					<div class="grid grid--col-2">
 						<div>
-							<label>Email<span>*</span></label>
-							<input type="email">
+							<label>Email<span class="input__important">*</span></label>
+							<input class="input" type="email">
 						</div>
 
 						<div>
-							<label>Phone<span>*</span></label>
-							<input type="tel">
+							<label>Phone<span class="input__important">*</span></label>
+							<input class="input" type="tel">
 						</div>
 					</div>
 
 					<label>Order Notes</label>
-					<textarea placeholder="Write your notes here..." rows="8"></textarea>
+					<textarea class="input" placeholder="Write your notes here..." rows="8"></textarea>
 				</form>
 			</div>
 		</div>
 
 		<div>
-			<h3>Coupon Code</h3>
-			<div class="checkout__itens">
+			<h3 class="title__sub">Coupon Code</h3>
+
+			<div class="box">
 				<div>
-					<p>Enter your coupon code if you have one</p>
-					<div class="code">
-						<input type="text" placeholder="Coupon Code">
-						<button>Apply</button>
+					<p class="title__lines">Enter your coupon code if you have one</p>
+					<div class="box--rel">
+						<input class="input input--no-margin" type="text" placeholder="Coupon Code">
+						<button class="btn btn__input">Apply</button>
 					</div>
 				</div>
 			</div>
 			
-			<h3>Your Order</h3>
+			<h3 class="title__sub">Your Order</h3>
 
-			<div class="checkout__itens table">
-				<table>
-					<tr>
-						<th>Product</th>
-						<th>Total</th>
-					</tr>
+			<div class="box">
+				<table class="table">
+					<thead>
+						<tr>
+							<th class="table__item table__item-header">Product</th>
+							<th class="table__item table__item-header">Total</th>
+						</tr>
+					</thead>
 
-					<tr>
-						<td>Top Up T-Shirt x 1</td>
-						<td>$250.00</td>
-					</tr>
+					<tbody>
+						<tr>
+							<td class="table__item">Top Up T-Shirt x 1</td>
+							<td class="table__item">$250.00</td>
+						</tr>
 
-					<tr>
-						<td>Polo Shirt x 1</td>
-						<td>$100.00</td>
-					</tr>
+						<tr>
+							<td class="table__item">Polo Shirt x 1</td>
+							<td class="table__item">$100.00</td>
+						</tr>
 
-					<tr>
-						<td>Cart Subtotal</td>
-						<td>$350.00</td>
-					</tr>
+						<tr>
+							<td class="table__item">Cart Subtotal</td>
+							<td class="table__item">$350.00</td>
+						</tr>
 
-					<tr>
-						<td>Order Total</td>
-						<td>$350.00</td>
-					</tr>
+						<tr>
+							<td class="table__item table__item-header">Order Total</td>
+							<td class="table__item table__item-header">$350.00</td>
+						</tr>
+					</tbody>
 				</table>
 				
 				<div>
-					<a href="#">Direct Bank Transfer</a>
-					<a href="#">Cheque Payment</a>
-					<a href="#">Paypal</a>
+					<a class="box__link" href="#">Direct Bank Transfer</a>
+					<a class="box__link" href="#">Cheque Payment</a>
+					<a class="box__link" href="#">Paypal</a>
 				</div>
 
-				<button type="submit">Place Order</button>
+				<button class="btn btn--size-md input__btn" type="submit">Place Order</button>
 			</div>
 		</div>
 	</div>

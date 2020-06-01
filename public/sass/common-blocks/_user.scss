@@ -1,0 +1,26 @@
+.user {  
+  padding-left: 2vw;
+  padding-right: 2vw;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: rgba($color: #000, $alpha: .7);
+  }
+
+  &__link {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    text-decoration: underline;
+    text-align: center;
+    color: #000;    
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  &--text-black {
+    color: #000;
+  }
+}

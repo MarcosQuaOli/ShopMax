@@ -4,6 +4,14 @@
   text-align: center;
   padding-top: 4rem;
 
+  &__contact {
+    background-image: url(../../images/about_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+  }
+
   &__content {
     align-self: center;
     justify-self: center;
@@ -28,7 +36,7 @@
   }
 
   &__img {
-    max-height: 600px;
+    max-height: 500px;
 
     @media (min-width: 768px) {
       order: 1;

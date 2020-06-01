@@ -1,0 +1,29 @@
+.team {
+  text-align: center;
+  line-height: 1.5rem;
+  letter-spacing: .5px;
+
+  &__img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  &__name {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  &__ocupation {
+    color: #ddd;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+  &__text {
+    color: rgba(0,0,0,0.5);
+  }
+}

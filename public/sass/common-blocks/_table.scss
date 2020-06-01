@@ -1,0 +1,29 @@
+.table {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3rem;
+  border-collapse: collapse;
+
+  &__item {
+    padding: .5rem;
+    border: 1px solid #ddd;
+
+    &-header {
+      font-size: .8rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  &__rel {
+    position: relative;
+    max-width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__img {
+    max-width: 150px;
+    display: inline-block;
+  }
+}

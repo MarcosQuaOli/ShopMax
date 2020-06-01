@@ -10,12 +10,21 @@
     gap: 2rem;
   }
 
+  &--center-self {
+    align-self: center;
+    justify-self: center;
+  }
+
   &--justify-center {
     justify-content: center;
   }  
 
   &--autofit {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  &--col-1-5 {
+    grid-template-columns: 1fr 5fr;
   }
 
   @media (min-width: 576px) {

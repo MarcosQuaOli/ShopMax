@@ -26,20 +26,13 @@ $(document).ready(() => {
     $('#arrow-right').addClass('fas fa-arrow-right');
   }
 
-  $('.navbar__rel').mouseleave((e) => {
-    if(window.innerWidth > 768) {
-      $target = $(e.currentTarget).children('.dropdown');
-      
-      $($target).slideUp();
-    }
+  let timeout;
+  $('.navbar__rel').on('mouseenter mouseleave', (e) => {
+
+    $target = $(e.currentTarget).children('.dropdown');
+
+    $($target).slideToggle();
+    
   })
-
-  $('.navbar__rel').mouseenter((e) => {
-    if(window.innerWidth > 768) {
-      $target = $(e.currentTarget).children('.dropdown');
-
-      $($target).slideDown();
-    }
-  })  
 
 })

@@ -1,27 +1,28 @@
-<section class="page page-check">
-	<div class="container">
-		<a href="index.html">Home</a>
-		<span>/</span>Login
+<section class="link-back link-back--bg-light">
+	<div class="page__inner">
+		<a class="link-back__btn" href="/">Home</a>
+		<span class="link-back--mx">/</span>
+		<span class="link-back--mx">Login</span>
 	</div>
 </section>
 
-<section class="login container">
-	<h2>Login</h2>
+<section class="user page__user page__section">
+	<h2 class="user__title">Login</h2>
 
 	<label>Username or email address *</label>
-	<input type="text" required>
+	<input class="input" type="text" required>
 	
 	<label>Password *</label>
-	<input type="password" required>
+	<input class="input" type="password" required>
 
-	<div>
+	<div class="flex">
 		<label>
-			<input type="checkbox">Save Password
+			<input class="input__checkbox" type="checkbox">Save Password
 		</label>
 
-		<a href="#">Forget your Password?</a>
+		<a href="#" class="user--text-black">Forget your Password?</a>
 	</div>
 
-	<a href="#" class="login__sign">Sign in</a>
-	<a href="register.html" class="login__link">Or create an account</a>
+	<a href="#" class="btn btn--size-md input__btn">Sign in</a>
+	<a href="/register" class="user__link">Or create an account</a>
 </section>

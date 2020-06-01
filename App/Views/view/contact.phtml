@@ -1,59 +1,58 @@
-<section class="banner-contact">
-</section>
+<section class="banner__contact"></section>
 
-<section class="page">
-	<div class="container">
-		<a href="index.html">Home</a>
-		<span>/</span>
-		<span>Contact</span>
+<section class="link-back">
+	<div class="page__inner">
+		<a class="link-back__btn" href="/">Home</a>
+		<span class="link-back--mx">/</span>
+		<span class="link-back--mx">Contact</span>
 	</div>
 </section>
 
-<section class="contact container">
-	<h2>Get In Touch</h2>
+<section class="page__inner page__section">
+	<h2 class="title__sub">Get In Touch</h2>
 
-	<div class="contact__container">
-		<div class="contact__form">
+	<div class="grid grid--gap-2 grid--col-5-3">
+		<div class="box">
 			<form>
-				<div class="contact__form__name">
+				<div class="grid grid--col-2">
 					<div>
-						<label>First Name<span>*</span></label>
-						<input type="text" required>
+						<label>First Name<span class="input__important">*</span></label>
+						<input class="input" type="text" required>
 					</div>
 
 					<div>
-						<label>Last Name<span>*</span></label>
-						<input type="text" required>
+						<label>Last Name<span class="input__important">*</span></label>
+						<input class="input" type="text" required>
 					</div>
 				</div>
 
-				<label>Email<span>*</span></label>
-				<input type="email">
+				<label>Email<span class="input__important">*</span></label>
+				<input class="input" type="email">
 
 				<label>Subject</label>
-				<input type="text">
+				<input class="input" type="text">
 
 				<label>Message</label>
-				<textarea rows="10"></textarea>
+				<textarea class="input" rows="10"></textarea>
 
-				<button type="submit">Send Message</button>
+				<button class="btn btn--size-md input__btn" type="submit">Send Message</button>
 			</form>
 		</div>
 
-		<div class="contact__address">
-			<div>
-				<h3>New York</h3>
-				<address>203 Fake St. Mountain View, San Francisco, California, USA</address>
+		<div class="">
+			<div class="box">
+				<h3 class="box__title">New York</h3>
+				<address class="box__text">203 Fake St. Mountain View, San Francisco, California, USA</address>
 			</div>
 
-			<div>
-				<h3>London</h3>
-				<address>203 Fake St. Mountain View, San Francisco, California, USA</address>
+			<div class="box">
+				<h3 class="box__title">London</h3>
+				<address class="box__text">203 Fake St. Mountain View, San Francisco, California, USA</address>
 			</div>
 
-			<div>
-				<h3>Canada</h3>
-				<address>203 Fake St. Mountain View, San Francisco, California, USA</address>
+			<div class="box">
+				<h3 class="box__title">Canada</h3>
+				<address class="box__text">203 Fake St. Mountain View, San Francisco, California, USA</address>
 			</div>
 		</div>
 	</div>

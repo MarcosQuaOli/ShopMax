@@ -1,7 +1,7 @@
 .link-back {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f9f9f9;
 
   &__btn {
     color: $color-primary;
@@ -10,5 +10,9 @@
   &--mx {
     margin-left: .5rem;
     margin-right: .5rem;
+  }
+
+  &--bg-light {
+    background-color: #f9f9f9;
   }
 }
